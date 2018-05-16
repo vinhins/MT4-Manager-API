@@ -1,0 +1,340 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ManagerAPITest.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ManagerAPITest.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PASS_CHANGE DIALOG 0, 0, 180, 75
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Change Password"
+FONT 8, "MS Sans Serif"
+BEGIN
+    RTEXT           "New password:",IDC_STATIC,5,7,60,10
+    EDITTEXT        IDC_NEWPASS,70,5,100,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "Confirm:",IDC_STATIC,5,22,60,10
+    EDITTEXT        IDC_CONFIRM,70,20,100,12,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "Investor",IDC_INVESTOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,70,36,100,10
+    DEFPUSHBUTTON   "OK",IDOK,37,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,92,55,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_PASS_CHANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MANAGERAPITEST DIALOGEX 0, 0, 385, 297
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MT4 Manager API Admin"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,155,275,75,14
+    EDITTEXT        IDC_SERVER,60,5,75,12,ES_AUTOHSCROLL
+    RTEXT           "Server:",IDC_STATIC,5,7,50,10
+    EDITTEXT        IDC_LOGIN,60,20,75,12,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Login:",IDC_STATIC,5,22,50,10
+    EDITTEXT        IDC_PASSWORD,60,35,75,12,ES_PASSWORD | ES_AUTOHSCROLL
+    RTEXT           "Password:",IDC_STATIC,5,37,50,10
+    PUSHBUTTON      "Connect",IDC_CONNECT,140,5,75,14
+    PUSHBUTTON      "Login",IDC_LOGINCMD,140,20,75,14
+    PUSHBUTTON      "Disconnect",IDC_DISCONNECT,140,35,75,14
+    PUSHBUTTON      "Ping",IDC_PING,220,5,75,14
+    PUSHBUTTON      "PasswordChange",IDC_PASS_CHANGE,220,20,75,14
+    PUSHBUTTON      "SrvRestart",IDC_RESTART,300,5,75,14
+    PUSHBUTTON      "SrvChartsSync",IDC_CHARTSYNC,300,20,75,14
+    PUSHBUTTON      "SrvLiveUpdateStart",IDC_LIVEUPDATE,300,35,75,14
+    PUSHBUTTON      "SrvFeedsRestart",IDC_FEEDSRESET,300,50,75,14
+    CONTROL         "List1",IDC_RESULTS,"SysListView32",LVS_REPORT | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,10,145,365,125
+    EDITTEXT        IDC_FEEDER,60,50,75,12,ES_AUTOHSCROLL
+    RTEXT           "Feeder:",IDC_STATIC,5,52,50,10
+    PUSHBUTTON      "SrvFeederLog",IDC_FEEDERLOG,140,50,75,14
+    PUSHBUTTON      "SrvFeeders",IDC_SRVFEEDS,220,50,75,14
+    COMBOBOX        IDC_CONFIG,60,65,75,185,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Configuration:",IDC_STATIC,5,67,50,10
+    PUSHBUTTON      "Request",IDC_CONFIG_REQUEST,140,65,45,14
+    PUSHBUTTON      "Up",IDC_CONFIG_UP,300,65,35,14
+    PUSHBUTTON      "Down",IDC_CONFIG_DOWN,340,65,35,14
+    PUSHBUTTON      "Delete",IDC_CONFIG_DELETE,250,65,45,14
+    PUSHBUTTON      "Update",IDC_CONFIG_UPDATE,195,65,45,14
+    COMBOBOX        IDC_SYMBOL,60,80,75,185,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Chart:",IDC_STATIC,5,82,50,10
+    COMBOBOX        IDC_PERIOD,140,80,35,185,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Request",IDC_CHART_REQUEST,180,80,45,14
+    PUSHBUTTON      "Update",IDC_CHART_UPDATE,230,80,45,14
+    PUSHBUTTON      "Delete",IDC_CHART_DELETE,280,80,45,14
+    PUSHBUTTON      "Add",IDC_CHART_ADD,330,80,45,14
+    PUSHBUTTON      "Performance",IDC_PERFORMANCE,220,35,75,14
+    RTEXT           "Backup:",IDC_STATIC,5,97,50,10
+    PUSHBUTTON      "Users",IDC_BACKUP_USERS,180,95,45,14
+    PUSHBUTTON      "Orders",IDC_BACKUP_ORDERS,230,95,45,14
+    COMBOBOX        IDC_BACKUP,60,95,115,185,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Request",IDC_BACKUP_REQUEST,280,95,45,14
+    PUSHBUTTON      "Restore",IDC_BACKUP_RESTORE,330,95,45,14
+    RTEXT           "Database:",IDC_STATIC,5,113,50,10
+    COMBOBOX        IDC_BASE_GROUP,60,110,115,185,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Users",IDC_BASE_USERS,180,110,45,14
+    PUSHBUTTON      "Orders",IDC_BASE_ORDERS,180,125,45,14
+    PUSHBUTTON      "Check",IDC_USERS_CHECK,230,110,45,14
+    PUSHBUTTON      "Fix",IDC_USERS_FIX,280,110,45,14
+    PUSHBUTTON      "Modify",IDC_ORDERS_MODIFY,230,125,45,14
+    PUSHBUTTON      "Delete",IDC_ORDERS_DELETE,280,125,45,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_MANAGERAPITEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 378
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 290
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000004b0"
+        BEGIN
+            VALUE "FileDescription", "ManagerAPITest MFC Application"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "ManagerAPITest"
+            VALUE "LegalCopyright", "© 2001-2014, MetaQuotes Software Corp."
+            VALUE "OriginalFilename", "ManagerAPITest.EXE"
+            VALUE "ProductName", "ManagerAPITest Application"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_MANAGERAPITEST DLGINIT
+BEGIN
+    IDC_CONFIG, 0x403, 7, 0
+0x6f43, 0x6d6d, 0x6e6f, "\000" 
+    IDC_CONFIG, 0x403, 7, 0
+0x6341, 0x6563, 0x7373, "\000" 
+    IDC_CONFIG, 0x403, 13, 0
+0x6144, 0x6174, 0x5320, 0x7265, 0x6576, 0x7372, "\000" 
+    IDC_CONFIG, 0x403, 5, 0
+0x6954, 0x656d, "\000" 
+    IDC_CONFIG, 0x403, 9, 0
+0x6f48, 0x696c, 0x6164, 0x7379, "\000" 
+    IDC_CONFIG, 0x403, 8, 0
+0x7953, 0x626d, 0x6c6f, 0x0073, 
+    IDC_CONFIG, 0x403, 11, 0
+0x6553, 0x7563, 0x6972, 0x6974, 0x7365, "\000" 
+    IDC_CONFIG, 0x403, 7, 0
+0x7247, 0x756f, 0x7370, "\000" 
+    IDC_CONFIG, 0x403, 9, 0
+0x614d, 0x616e, 0x6567, 0x7372, "\000" 
+    IDC_CONFIG, 0x403, 11, 0
+0x6144, 0x6174, 0x4620, 0x6565, 0x7364, "\000" 
+    IDC_CONFIG, 0x403, 7, 0
+0x6142, 0x6b63, 0x7075, "\000" 
+    IDC_CONFIG, 0x403, 11, 0
+0x694c, 0x6576, 0x7055, 0x6164, 0x6574, "\000" 
+    IDC_CONFIG, 0x403, 16, 0
+0x7953, 0x636e, 0x7268, 0x6e6f, 0x7a69, 0x7461, 0x6f69, 0x006e, 
+    IDC_CONFIG, 0x403, 8, 0
+0x6c50, 0x6775, 0x6e69, 0x0073, 
+    IDC_CONFIG, 0x403, 17, 0
+0x6147, 0x6574, 0x6177, 0x2079, 0x6341, 0x6f63, 0x6e75, 0x7374, "\000" 
+    IDC_CONFIG, 0x403, 16, 0
+0x6147, 0x6574, 0x6177, 0x2079, 0x614d, 0x6b72, 0x7075, 0x0073, 
+    IDC_CONFIG, 0x403, 14, 0
+0x6147, 0x6574, 0x6177, 0x2079, 0x7552, 0x656c, 0x0073, 
+    IDC_PERIOD, 0x403, 3, 0
+0x314d, "\000" 
+    IDC_PERIOD, 0x403, 3, 0
+0x354d, "\000" 
+    IDC_PERIOD, 0x403, 4, 0
+0x314d, 0x0035, 
+    IDC_PERIOD, 0x403, 4, 0
+0x334d, 0x0030, 
+    IDC_PERIOD, 0x403, 3, 0
+0x3148, "\000" 
+    IDC_PERIOD, 0x403, 3, 0
+0x3448, "\000" 
+    IDC_PERIOD, 0x403, 3, 0
+0x3144, "\000" 
+    IDC_PERIOD, 0x403, 3, 0
+0x3157, "\000" 
+    IDC_PERIOD, 0x403, 4, 0
+0x4e4d, 0x0031, 
+    IDC_BASE_GROUP, 0x403, 2, 0
+0x002a, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ManagerAPITest.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
